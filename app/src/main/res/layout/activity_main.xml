@@ -20,18 +20,9 @@
         android:layout_height="wrap_content"
         android:text="Add Task"
         android:id="@+id/btnAddItem"
-        android:layout_alignBottom="@+id/etNewItem"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:text="Add SmartTask"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_below="@+id/btnAddSmartItem"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/button" />
 
     <ListView
         android:layout_width="wrap_content"
@@ -39,7 +30,17 @@
         android:id="@+id/lvItems"
         android:layout_below="@+id/button"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:text="Add Smart Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnAddItem"
+        android:layout_toStartOf="@+id/btnAddItem" />
 
 
 </RelativeLayout>
